@@ -12,6 +12,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-ibm-plex-mono);
   --font-mono: var(--font-ibm-plex-mono);
+  --font-silkscreen: var(--font-silkscreen);
   --color-secondary: var(--secondary);
 }
 

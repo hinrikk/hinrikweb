@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Inter } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Silkscreen } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/header";
 
@@ -14,6 +14,12 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+});
+
+const silk = Silkscreen({
+  variable: "--font-silkscreen",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 
@@ -35,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ibmPlexMono.variable}`}
+      className={`${ibmPlexMono.variable} ${inter.variable} ${silk.variable}`}
     >
       <body>
         <Header />
